@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "WakeBoard",
+    "slug": "wakeboard-app",
+    "scheme": "wakeboard",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.wakeboard.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Show wakeboard parks near you on the map.",
+        "NSCameraUsageDescription": "Film your tricks to log your progression.",
+        "NSPhotoLibraryUsageDescription": "Attach videos and photos to tricks and marketplace listings."
+      }
+    },
+    "android": {
+      "package": "com.wakeboard.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-video",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
